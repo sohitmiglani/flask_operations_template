@@ -1,0 +1,96 @@
+#outer_box {
+text-align: center;
+margin: 0 auto;
+padding: 5px;
+border-radius: 10px;
+background-color: rgba(67, 43, 89, 0.85);
+border-radius: 10px
+}
+
+#inner_box {
+text-align:center;
+margin: 0 auto;
+padding: 10px;
+border-radius: 10px;
+background-color: rgba(255,255,255,0.87)
+}
+
+#big_hr {
+height:2px;
+width: 90%;
+text-align:center;
+margin: 0 auto;
+background-color: #432B59;
+border: none'
+}
+
+#list_style {
+color:black;
+text-align: left;
+margin-left: 60px
+}
+
+#dataviz_box {
+height: 400px;
+width: 500px;
+text-align: center;
+margin: 0 auto;
+display:inline-block;
+opacity: 0.8
+}
+
+#image {
+border-radius: 10px;
+height: 400px;
+width: 500px;
+display:inline-block
+}
+
+#back_button {
+font-size:100%;
+width:10%;
+height:30px;
+border-radius: 5px;
+font-size: 15px
+}
+
+.input_small {
+text-align:center;
+margin: 0 auto;
+color: #432B59;
+width: 20%;
+height: 35px;
+margin-left: 20px;
+border-radius: 10px;
+margin-top: 10px
+}
+
+.input_big {
+text-align:center;
+margin: 0 auto;
+color: #432B59;
+width: 30%;
+height: 35px;
+margin-left: 20px;
+border-radius: 10px;
+margin-top: 10px
+}
+
+#submit_button {
+font-size:100%;
+width:20%;
+height:40px;
+background-color:#432B59;
+border-width: 0px;
+border-radius: 10px;
+font-size: 20px;
+margin-left: 20px
+}
+
+.red{
+  border: 2px solid red;
+}
+
+.green{
+  border: 2px solid green;
+}

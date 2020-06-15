@@ -1,0 +1,66 @@
+<html>
+<link rel="icon" href="https://www.certainlending.com/favicon.ico">
+<head><title>Flask Calculator</title> {% extends "bootstrap/base.html" %}{% block content %}
+<link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<link rel="stylesheet" href="/static/css/app_styles.css">
+</head>
+
+<body style="background-image: url('https://d33wubrfki0l68.cloudfront.net/536b3b4b2a990b7cdb167bd18a2ddd4b2df33a35/88254/images/landingpage/hero/herocrop-sm-2x.jpg');
+background-repeat: round; height: 1000px">
+<img src="/static/images/logo.svg" class="svgClass" style="height:50px; margin-top: 20px; margin-left: 10px">
+<form class="container" enctype="multipart/form-data" method="post" style='text-align:center; margin: 0 auto'>
+
+      <h1 style='color:white;'><font face="monospace"> Your very own Flask calculator </font> </h1>
+      <hr style='width: 50%; text-align:center; margin: 0 auto'>
+      <h4 style='color:white'><font face="monospace"> Make a calculation or get the history of your calculation </font></h4>
+      <hr style='width: 25%; text-align:center; margin: 0 auto'> <br>
+
+      {% with messages = get_flashed_messages() %}
+      <p style='color:red; text-align:center; margin: 0 auto; width:500px; margin-top: 20px'>
+         {% if messages %}
+            {% for message in messages %}
+               {{ message }}
+            {% endfor %}
+         {% endif %}</p>
+      {% endwith %}
+
+      <font face="monospace">
+        <div id='root'>
+
+          {% if input == False%}
+
+          <input type='text' class='input_big' id="id" name="id" placeholder='Your ID' required style = 'text-align: center; width: 15%'/><br>
+          <input type='text' class='input_big' id="num1" name="num1" placeholder='First Number' required style = 'text-align: center; width: 15%'/><br>
+          <input type='text' class = 'input_big' id='num2' name="num2" placeholder='Second Number' required style = 'text-align: center; width: 15%'/><br>
+
+          <select name="operator" id="operator" class='input_big' style = 'text-align: center; width: 12%'>
+
+              <option value="Addition">Addition (+)</option>
+              <option value="Subtraction">Subtraction (-)</option>
+              <option value="Multiplication">Multiply (*)</option>
+              <option value="Division">Divide (/)</option>
+
+          </select> <br>
+
+          <br>
+          <button type="submit" name='submit_button' class="btn btn-success" value='submit_info' id='submit_button'> Submit</button> <br><br>
+          {% elif input == True %}
+
+          <h4 style='color:white'><font face="monospace"> The answer is {{answer}} </font></h4>
+
+          <button type="submit" name='submit_button' class="btn btn-success" value='new_calc' id='submit_button'> New Calculation </button> <br><br>
+
+          {% endif %}
+
+
+        </div>
+      </font><br>
+</form>
+
+<form class="container" enctype="multipart/form-data" method="post" style='text-align:center; margin: 0 auto'>
+<button type="submit" name='submit_button' class="btn btn-success" value='get_history' id='submit_button'> Get History </button> <br>
+</form>
+<script src="/static/js/app_script.js"> </script>{% endblock %}
+</body>
+</html>

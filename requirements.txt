@@ -1,0 +1,7 @@
+flask
+flask_bootstrap
+flask_cors
+numpy
+matplotlib
+seaborn
+gunicorn

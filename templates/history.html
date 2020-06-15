@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<link rel="icon" href="https://www.certainlending.com/favicon.ico">
+<head><title>Flask Calculator</title> {% extends "bootstrap/base.html" %}{% block content %}
+<link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<link rel="stylesheet" href="/static/css/app_styles.css">
+</head>
+
+<body style="background-image: url('https://d33wubrfki0l68.cloudfront.net/536b3b4b2a990b7cdb167bd18a2ddd4b2df33a35/88254/images/landingpage/hero/herocrop-sm-2x.jpg');
+background-repeat: round; height: 1000px">
+
+            <form action="" class="container" enctype="multipart/form-data" method="post">
+                <div id = 'outer_box'><div id = 'inner_box'>
+
+                  <h1 style='color:#432B59;'><font face="monospace"> History of your Calculations as a CSV</font> </h1><hr>
+
+                  {% with messages = get_flashed_messages() %}
+                  <p style='color:red; text-align:center; margin: 0 auto; width:500px; margin-top: 20px'>
+                     {% if messages %}
+                        {% for message in messages %}
+                           {{ message }}
+                        {% endfor %}
+                     {% endif %}</p>
+                  {% endwith %}
+
+                <form class="container" enctype="multipart/form-data" method="post" style='text-align:center; margin: 0 auto'>
+                    <input type='text' class='input_big' id="id" name="id" placeholder='Enter Your ID' required style = 'text-align: center; width: 15%'/><br><br>
+                    <button type="submit" name='submit_button' class="btn btn-success" value='fetch_history' id='submit_button'> Get History </button> <br>
+                </form>
+
+                <hr><br></form>
+                <form action="" class="container" enctype="multipart/form-data" method="post">
+                <button type="submit" name='submit_button' class="btn btn-success" value='go_back' id='back_button'>
+                Go Back</button> </form>
+              </div></div> <br> <script src="/static/js/app_script.js"> </script>
+{% endblock %}
+    </body>
+</html>
