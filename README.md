@@ -7,7 +7,7 @@ This is a Python App built using Flask, HTML and Javascript. It evaluates a calc
 2. Use the unique ID to pull a CSV of calculation history.
 3. Use wget to download a csv of your calculation history.
 
-##Installation
+## Installation
 
 ```terminal
 git clone https://github.com/sohitmiglani/flask_calculator
