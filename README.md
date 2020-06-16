@@ -24,6 +24,6 @@ Run the following command to download your history of calculations.
 wget 'http://127.0.0.1:5000/download_history/?id'
 ```
 
-##Walkthrough
+## Walkthrough
 
-The walkthrough video can be viewed [here.]
+The walkthrough video can be viewed [here.](https://youtu.be/Qo3211zXayk)
