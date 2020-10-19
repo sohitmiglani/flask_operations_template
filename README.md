@@ -1,4 +1,4 @@
-# Flask Calculator
+# Flask Calculator [A template repository of a Flask App that performs multiple mathematical operations on given data]
 
 This is a Python App built using Flask, HTML and Javascript. It evaluates a calculation, given the number and the operator.
 
